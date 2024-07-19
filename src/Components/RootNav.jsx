@@ -20,6 +20,7 @@ import {
   HiMail,
   HiDesktopComputer,
 } from "react-icons/hi";
+import { TbMessage2Question } from "react-icons/tb";
 
 const variants = {
   open: {
@@ -104,6 +105,13 @@ const RootNav = () => {
               <span className={mobileStyles.menuItem}>
                 <HiDesktopComputer className={mobileStyles.menuIcon} />
                 <p className="text-sm sm:text-md">Projects</p>
+              </span>
+            </Link>
+
+            <Link to="faqs">
+              <span className={mobileStyles.menuItem}>
+                <TbMessage2Question className={mobileStyles.menuIcon} />
+                <p className="text-sm sm:text-md">FAQs</p>
               </span>
             </Link>
 

@@ -9,6 +9,7 @@ import {
 // PAGES
 import Landing from "./Pages/Landing";
 import Services from "./Pages/Services";
+import About from "./Pages/About";
 
 // COMPONENTS
 import RootNav from "./Components/RootNav";
@@ -23,15 +24,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootNav />}>
       <Route index element={<Landing />} />
       <Route path="services" element={<Services />} />
-      {/* <Route path="day" element={<Day />} /> */}
-      {/* <Route path="smallBusiness" element={<SmallBusiness />} />
-      <Route path="ecommerce" element={<Ecommerce />} />
-      <Route path="support" element={<Support />} />
-      <Route path="reviews" element={<Reviews />} />
-      <Route path="FAQs" element={<Faqs />} />
-      <Route path="contact" element={<Contact />}>
-        <Route path="privacyPolicy" element={<PrivacyPolicy />} />
-        <Route path="termsOfUse" element={<TermsOfUse />} /> */}
+      <Route path="about" element={<About />} />
       {/* </Route> */}
       {/* ERROR HANDLING */}
       <Route path="*" element={<Error />} />
