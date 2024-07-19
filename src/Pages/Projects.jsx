@@ -42,6 +42,9 @@ const Projects = () => {
           alt="fast track build image"
           className={layoutStyles.cardImage}
         />
+        <h4 className="text-center pt-4">
+          Thank you Hannah! The website is great and works perfectly.
+        </h4>
         <Link to="https://www.isaaccardow.com/" target="_blank">
           <button className={layoutStyles.button}>Visit</button>{" "}
         </Link>
@@ -56,6 +59,9 @@ const Projects = () => {
           alt="fast track build image"
           className={layoutStyles.cardImage}
         />
+        <h4 className="text-center pt-4">
+          Thank you very much! The app makes my invoice maths so much easier!
+        </h4>
         <Link
           to="https://childcare-invoice-generator.vercel.app/"
           target="_blank">
@@ -72,6 +78,7 @@ const Projects = () => {
           alt="fast track build image"
           className={layoutStyles.cardImage}
         />
+        <h4 className="text-center pt-4">It looks great, cheers!</h4>
         <Link to="https://landscaping-pi.vercel.app/" target="_blank">
           <button className={layoutStyles.button}>Visit</button>{" "}
         </Link>
