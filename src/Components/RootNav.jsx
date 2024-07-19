@@ -51,7 +51,7 @@ const RootNav = () => {
   // STYLES
   const mobileStyles = {
     container:
-      "fixed w-screen h-20 bg-gradient-to-b from-green to-[#318D2F] z-40",
+      "fixed w-screen h-24 bg-gradient-to-b from-green to-[#318D2F] z-40",
     logo: "absolute right-16 z-[99] cursor-pointer",
     fullMenu:
       "bg-white fixed w-screen h-screen p-20 md:p-0 flex flex-col justify-center items-center z-30 md:w-2/6",
