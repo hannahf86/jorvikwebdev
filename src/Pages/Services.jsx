@@ -92,7 +92,7 @@ const Services = () => {
           </div>
         </Link>
 
-        {/* ITEM 01 */}
+        {/* ITEM 02 */}
         <Link to="fasttrack">
           <div className="bg-white m-10 p-8 rounded-lg">
             <h2 className="text-center font-bold text-xl pb-4 text-black ">
@@ -106,7 +106,7 @@ const Services = () => {
           </div>
         </Link>
 
-        {/* ITEM 01 */}
+        {/* ITEM 03 */}
         <Link to="fasttrack">
           <div className="bg-white m-10 p-8 rounded-lg">
             <h2 className="text-center font-bold text-xl pb-4 text-black ">
@@ -120,7 +120,7 @@ const Services = () => {
           </div>
         </Link>
 
-        {/* ITEM 01 */}
+        {/* ITEM 04 */}
         <Link to="fasttrack">
           <div className="bg-white m-10 p-8 rounded-lg">
             <h2 className="text-center font-bold text-xl pb-4 text-black ">
