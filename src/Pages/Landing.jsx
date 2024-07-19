@@ -29,8 +29,8 @@ const sliderVariants = {
     x: "-220%",
     transition: {
       repeat: Infinity,
-      repeatType: "linear",
-      duration: 50,
+      repeatType: "loop",
+      duration: 200,
     },
   },
 };
@@ -39,7 +39,7 @@ const Landing = () => {
   // STYLES
   const layoutStyles = {
     background:
-      "bg-gradient-to-b from-green to-lightGreen h-screen w-screen z-0 overflow-hidden",
+      "bg-gradient-to-b from-green to-lightGreen h-screen w-screen z-0 overflow-hidden relative",
     logo: "flex flex-col justify-center items-center pt-24",
     textContainer: "relative mx-10 z-30",
     image: "hidden md:block",
@@ -54,6 +54,8 @@ const Landing = () => {
     subtitle:
       "text-lightGreen tracking-widest text-center font-bold text-sm pt-12 pb-4 ",
     desc: "text-white text-base text-center pb-8 ",
+    slidingText:
+      "absolute -bottom-40 whitespace-nowrap z-10 text-9xl font-serif font-bold text-white/30",
   };
 
   return (
@@ -113,7 +115,8 @@ const Landing = () => {
       <motion.div
         variants={sliderVariants}
         initial="initial"
-        id="slidingText"
+        // id="slidingText"
+        className={textStyles.slidingText}
         animate="animate">
         Web dev ~ UI & UX design ~ SEO ~
       </motion.div>

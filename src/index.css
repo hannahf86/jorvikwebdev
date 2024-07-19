@@ -18,15 +18,3 @@ html {
 body {
   background-color: #288628;
 }
-
-#slidingText {
-  font-family: "DM Sans";
-  position: absolute;
-  font-size: 40vh;
-  bottom: -10rem;
-  white-space: nowrap;
-  color: #ffffff2f;
-  width: 50%;
-  font-weight: bold;
-  z-index: 1;
-}

@@ -28,6 +28,7 @@ export default {
       },
       fontFamily: {
         sans: [" Maven Pro "],
+        serif: ["DM Sans"],
       },
       fontSize: {
         xs: ["clamp(0.90rem, calc(0.82rem + 0.29vw), 0.8rem)", "1.4"],
@@ -38,10 +39,12 @@ export default {
         xl: ["clamp(1.42rem, calc(1.06rem + 1.80vw), 2.34rem)", "1.4"],
         "2xl": ["clamp(1.60rem, calc(1.08rem + 2.59vw), 2.93rem)", "1.2"],
         "3xl": ["clamp(1.80rem, calc(1.08rem + 3.63vw), 3.66rem)", "1.1"],
-        "4xl": ["clamp(2.03rem, calc(1.03rem + 4.98vw), 4.58rem)", "1"],
+        "4xl": ["clamp(2.03rem, calc(1.03rem + 4.98vw), 4.58rem)", "1.4"],
         "5xl": ["clamp(2.28rem, calc(0.94rem + 6.71vw), 5.72rem)", "1"],
         "6xl": ["clamp(2.57rem, calc(0.78rem + 8.95vw), 7.15rem)", "1"],
         "7xl": ["clamp(3.57rem, calc(1rem + 10.95vw), 7.15rem)", "1"],
+        "8xl": ["clamp(4.57rem, calc(1.2rem + 11.95vw), 9.15rem)", "1"],
+        "9xl": ["20rem"],
       },
     },
   },
