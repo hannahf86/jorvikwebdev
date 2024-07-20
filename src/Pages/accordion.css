@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+.accordion {
+  border: 2px solid #288628;
+  width: 100%;
+}
+
+.accordion__item + .accordion__item {
+  border: 2px solid #288628;
+}
+
+.accordion__button {
+  background-color: #f4f4f4;
+  color: #2c2c2c;
+  cursor: pointer;
+  padding: 1.3rem;
+  text-align: left;
+  border: 2px solid #288628;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.accordion__button:hover {
+  background-color: #e9e9e9;
+  border: 2px solid orange;
+}
+
+/* ARROW BUTTON */
+.accordion__button:before {
+  display: inline-block;
+  content: "";
+  height: 10px;
+  color: #288628;
+  width: 10px;
+  margin-right: 1.2rem;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded="true"]::before,
+.accordion__button[aria-selected="true"]::before {
+  transform: rotate(45deg);
+}
+
+[hidden] {
+  display: none;
+}
+
+/* ITEM PANEL */
+.accordion__panel {
+  padding: 1rem;
+  animation: fadein 0.35s ease-in;
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+a {
+  color: orange;
+  font-weight: bold;
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
