@@ -6,6 +6,9 @@ import { useState } from "react";
 // REACT ROUTER DOM
 import { Outlet, Link } from "react-router-dom";
 
+// PAGES
+import Footer from "./Footer";
+
 // MOTION
 import { motion } from "framer-motion";
 
@@ -144,6 +147,7 @@ const RootNav = () => {
 
       <main>
         <Outlet />
+        <Footer />
       </main>
     </div>
   );

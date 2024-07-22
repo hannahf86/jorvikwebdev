@@ -33,12 +33,12 @@ const Contact = () => {
   // STYLES
   const layoutStyles = {
     background:
-      "bg-gradient-to-b from-green to-lightGreen h-screen w-screen z-0 pb-12",
+      "bg-gradient-to-b from-green to-lightGreen h-full w-screen z-0 pb-12",
     textContainer: "relative mx-10 z-30",
     button:
       "text-mono bg-button text-white text-base rounded-xl w-40 px-8 py-2 mx-2 mt-8 hover:bg-accent z-40",
     contactContainer: "hidden",
-    formContainer: "flex flex-col justify-center items-center w-full",
+    formContainer: "flex flex-col justify-center items-center w-full mb-12",
     input: "my-2 py-2 pl-2 rounded-md w-80",
     phoneSVG: "text-accent absolute m-auto z-10",
     logo: "flex flex-col justify-center items-center pt-24",
@@ -46,7 +46,7 @@ const Contact = () => {
 
   const textStyles = {
     title: "text-white text-2xl pb-8 text-center text-5xl",
-    desc: "text-white text-base text-center mb-8",
+    desc: "text-white text-base text-center mb-8 mx-10",
   };
 
   const ref = useRef();
@@ -136,7 +136,8 @@ const Contact = () => {
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className={layoutStyles.formContainer}>
+          className={layoutStyles.formContainer}
+          id="form">
           <input
             type="text"
             required
@@ -168,9 +169,7 @@ const Contact = () => {
         </motion.form>
       </div>
 
-      {/* <div className="footer">
-        <Footer />
-      </div> */}
+      <div className="footer"></div>
     </motion.div>
   );
 };
