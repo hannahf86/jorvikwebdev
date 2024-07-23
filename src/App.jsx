@@ -10,7 +10,7 @@ import {
 import Landing from "./Pages/Landing";
 import Services from "./Pages/Services";
 import About from "./Pages/About";
-import Projects from "./Pages/Projects";
+// import Projects from "./Pages/Projects";
 import Faqs from "./Pages/Faqs";
 import Contact from "./Pages/Contact";
 
@@ -29,7 +29,7 @@ const router = createBrowserRouter(
       <Route index element={<Landing />} />
       <Route path="services" element={<Services />} />
       <Route path="about" element={<About />} />
-      <Route path="projects" element={<Projects />} />
+      {/* <Route path="projects" element={<Projects />} /> */}
       <Route path="faqs" element={<Faqs />} />
       <Route path="contact" element={<Contact />} />
       {/* </Route> */}

@@ -48,7 +48,7 @@ const Services = () => {
       "text-left pl-2 font-bold text-xl text-black col-start-2 col-span-2 self-center",
     price: "text-left pl-2 col-start-2",
     cardDesc: "row-start-3 row-span-10 col-span-3 col-start-1 items-start mt-4",
-    listItem: "list-none my-2 ml-4",
+    listItem: "list-none my-2 ml-4 text-black",
   };
 
   const textStyles = {
