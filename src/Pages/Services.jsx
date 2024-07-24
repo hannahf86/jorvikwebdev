@@ -39,7 +39,7 @@ const Services = () => {
 
     servicesContainer: "flex flex-wrap justify-center mb-10",
     serviceCard:
-      "bg-white mx-10 mt-10 p-8 rounded-lg border-2 border-white hover:border-accent md:mx-6 max-w-100",
+      "bg-white mx-10 mt-10 p-8 rounded-lg border-2 border-white md:mx-6 max-w-100",
     cardLayout: "grid grid-cols-3 grid-rows-15",
     cardImage: "w-32 col-start-1 row-span-2 pr-1",
     cardTitle:
@@ -89,11 +89,14 @@ const Services = () => {
             </h3>
             <br />
             <br />
-            <h3 className="text-white text-base mt-8">
-              Select a build that fits your criteria as closely as possible,
-              then get in touch via our contact page, or you can email{" "}
-              <strong className="font-bold "> hello@jorvikweb.dev</strong>
+            <h3 className="text-white text-base mt-8 xl:mx-40">
+              Choose a build package that fits your criteria as closely as
+              possible, then get in touch via our contact page, or you can email{" "}
+              <strong className="font-bold "> hello@jorvikweb.dev</strong> to
+              begin the consultation process.
             </h3>
+            <br />
+            <br />
           </div>
         </div>
       </motion.div>
@@ -383,6 +386,7 @@ const Services = () => {
           </div>
         </div>
       </motion.div>
+
       {/* --------- CALL TO ACTION --------- */}
       <div className="w-full bg-white py-8 px-10 text-center md:col-start-1 md:col-span-2 md:max-h-60 md:py-4 md:mt-16">
         <h3 className="text-accent text-lg font-bold">
@@ -393,12 +397,19 @@ const Services = () => {
           business.
           <br />
           <br />
+          Addons, such as videos, blogs etc. can be added.
+          <br />
+          <br />
           Our packages are more what you&apos;d call &quot;guidelines&quot; than
           actual rules.{" "}
         </p>
-        <div className="flex justify-center">
-          <button className={layoutStyles.button}>Get in touch</button>
-        </div>
+        <p>
+          Email{" "}
+          <strong className="text-button hover:text-accent cursor-pointer">
+            hello@jorvikweb.dev
+          </strong>{" "}
+          to discuss your project.
+        </p>
       </div>
     </motion.div>
   );

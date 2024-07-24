@@ -13,6 +13,7 @@ import About from "./Pages/About";
 // import Projects from "./Pages/Projects";
 import Faqs from "./Pages/Faqs";
 import Contact from "./Pages/Contact";
+import PrivacyPolicy from "./Legal/PrivacyPolicy";
 
 // COMPONENTS
 import RootNav from "./Components/RootNav";
@@ -32,6 +33,7 @@ const router = createBrowserRouter(
       {/* <Route path="projects" element={<Projects />} /> */}
       <Route path="faqs" element={<Faqs />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="privacy" element={<PrivacyPolicy />} />
 
       {/* ERROR HANDLING */}
       <Route path="*" element={<Error />} />

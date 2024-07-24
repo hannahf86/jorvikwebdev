@@ -89,7 +89,8 @@ const Contact = () => {
       className={layoutStyles.background}
       variants={variants}
       initial="initial"
-      whileInView="animate">
+      whileInView="animate"
+      id="contact">
       <div className={layoutStyles.logo}>
         <img src="/logo.png" alt="jorvik web dev logo" />
         <motion.h1 variants={variants} className={textStyles.title}>
