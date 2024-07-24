@@ -40,7 +40,7 @@ const Faqs = () => {
   const layoutStyles = {
     background: "bg-green to-lightGreen h-full w-screen z-0 ",
     buttonContainer:
-      "relative flex flex-col justify-center items-center my-8 bg-white w-full md:py-8",
+      "relative flex flex-col justify-center items-center my-8 py-8 px-1 bg-white w-full md:py-8 md:px-12 lg:px-20 xl:px-40",
     serviceCard:
       "bg-white m-10 p-8 rounded-lg border-2 border-white hover:border-accent flex flex-col justify-center items-center",
     cardImage: "w-80 ",
@@ -284,7 +284,7 @@ const Faqs = () => {
           At Jorvik Web Dev, transparency is at the core of our ethos. <br />
           <br />
           If your question has not been answered above, please do not hesitate
-          to contact our Chief, Hannah directly via{" "}
+          to contact our Jarl, Hannah directly via{" "}
           <strong className="text-button hover:text-accent cursor-pointer">
             hello@jorvikweb.dev
           </strong>{" "}
