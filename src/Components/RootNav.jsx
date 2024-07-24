@@ -16,13 +16,7 @@ import { motion } from "framer-motion";
 import ToggleButton from "./ToggleButton";
 
 // ICONS
-import {
-  HiHome,
-  HiBriefcase,
-  HiBookOpen,
-  HiMail,
-  HiDesktopComputer,
-} from "react-icons/hi";
+import { HiHome, HiBriefcase, HiBookOpen, HiMail } from "react-icons/hi";
 import { TbMessage2Question } from "react-icons/tb";
 
 const variants = {
@@ -66,10 +60,9 @@ const RootNav = () => {
 
   const desktopStyles = {
     container:
-      "hidden md:block fixed flex w-3/6 top-0 right-6 h-24 bg-transparent z-40 items-center",
-    linkSubContainer: "mr-24 absolute top-5 right-40 flex items-center",
-    link: "mx-20 font-bold text-white hover:bg-accent p-2 rounded-sm",
-    button: "bg-black text-center text-accent font-bold rounded-md py-2 px-3",
+      "hidden md:block fixed flex w-3/6 top-0 right-0 h-24 bg-transparent z-40 items-center",
+    linkSubContainer: "absolute top-5 right-6 flex items-center",
+    link: "mx-12 font-bold text-white hover:bg-accent p-2 rounded-sm",
   };
 
   return (
@@ -135,12 +128,12 @@ const RootNav = () => {
         <nav>
           {/* LINKS */}
           <div className={desktopStyles.linkSubContainer}>
-            <a href="/#services" className={desktopStyles.link}>
+            <Link to="services" className={desktopStyles.link}>
               SERVICES
-            </a>
-            <a href="/#about" className={desktopStyles.link}>
+            </Link>
+            <Link to="about" className={desktopStyles.link}>
               PRICING
-            </a>
+            </Link>
           </div>
         </nav>
       </header>

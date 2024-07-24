@@ -13,7 +13,6 @@ export default {
       },
       screens: {
         xs: "480px",
-        midSm: "610px",
         mdMid: "880px",
       },
       container: {
