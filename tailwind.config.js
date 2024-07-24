@@ -12,7 +12,7 @@ export default {
         white: "#FFF",
       },
       screens: {
-        xs: "480px",
+        xs: "425px",
         mdMid: "880px",
       },
       container: {

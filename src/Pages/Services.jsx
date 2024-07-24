@@ -35,13 +35,14 @@ const Services = () => {
   const layoutStyles = {
     background:
       "bg-gradient-to-b from-green to-lightGreen h-full w-screen z-0 pb-12",
-    textContainer: "relative mx-10 z-30",
     button:
-      "text-mono bg-button text-white text-base rounded-xl w-60 px-8 py-3 mx-2 my-3 hover:bg-accent z-40",
+      "text-mono bg-button text-white text-base rounded-xl w-60 py-3 mx-2 my-3 hover:bg-accent md:text-md md:w-48",
     logo: "flex flex-col justify-center items-center pt-24",
     descContainer: "flex flex-col mx-10 text-center",
+
+    servicesContainer: "flex flex-wrap justify-center mb-10",
     serviceCard:
-      "bg-white m-10 p-8 rounded-lg border-2 border-white hover:border-accent",
+      "bg-white mx-10 mt-10 p-8 rounded-lg border-2 border-white hover:border-accent md:mx-6 max-w-96",
     cardLayout: "grid grid-cols-3 grid-rows-15",
     cardImage: "w-32 col-start-1 row-span-2 pr-1",
     cardTitle:
@@ -93,7 +94,9 @@ const Services = () => {
       </motion.div>
 
       {/* SERVICES CONTAINER */}
-      <motion.div className="servicesContainer" variants={variants}>
+      <motion.div
+        className={layoutStyles.servicesContainer}
+        variants={variants}>
         {/* --------- ITEM 01 --------- */}
         <Link to="fasttrack">
           <div className={layoutStyles.serviceCard}>
@@ -379,25 +382,24 @@ const Services = () => {
             </div>
           </div>
         </Link>
-
-        {/* --------- CALL TO ACTION --------- */}
-        <div className="w-full bg-white py-8 px-10 text-center">
-          <h3 className="text-accent text-lg font-bold">
-            Can&apos;t find exactly what you&apos;re looking for?
-          </h3>
-          <p className="pt-2 pb-4">
-            We&apos;re here to help you achieve your goal, whether its personal
-            or business.
-            <br />
-            <br />
-            Our packages are more what you&apos;d call &quot;guidelines&quot;
-            than actual rules.{" "}
-          </p>
-          <div className="flex justify-center">
-            <button className={layoutStyles.button}>Get in touch</button>
-          </div>
-        </div>
       </motion.div>
+      {/* --------- CALL TO ACTION --------- */}
+      <div className="w-full bg-white py-8 px-10 text-center md:col-start-1 md:col-span-2 md:max-h-60 md:py-4 md:mt-16">
+        <h3 className="text-accent text-lg font-bold">
+          Can&apos;t find exactly what you&apos;re looking for?
+        </h3>
+        <p className="pt-2 pb-4">
+          We&apos;re here to help you achieve your goal, whether its personal or
+          business.
+          <br />
+          <br />
+          Our packages are more what you&apos;d call &quot;guidelines&quot; than
+          actual rules.{" "}
+        </p>
+        <div className="flex justify-center">
+          <button className={layoutStyles.button}>Get in touch</button>
+        </div>
+      </div>
     </motion.div>
   );
 };

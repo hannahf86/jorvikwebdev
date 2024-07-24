@@ -72,9 +72,9 @@ const Footer = () => {
         <Link to="about" className={layoutStyles.navLink}>
           About
         </Link>
-        <Link to="projects" className={layoutStyles.navLink}>
+        {/* <Link to="projects" className={layoutStyles.navLink}>
           Projects
-        </Link>
+        </Link> */}
         <Link to="faqs" className={layoutStyles.navLink}>
           FAQs
         </Link>

@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 
 const About = () => {
   const layoutStyles = {
-    background: "bg-green h-full w-screen z-0 pb-12 px-6",
+    background:
+      "bg-gradient-to-b from-green to-lightGreen h-full w-screen z-0 pb-12 px-6",
     textContainer:
       "relative mx-8 z-30 flex flex-col justify-center items-center",
     button:

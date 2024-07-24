@@ -10,9 +10,6 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 
-// REACT ROUTER DOM
-import { Link } from "react-router-dom";
-
 // STYLES
 import "./accordion.css";
 
@@ -41,25 +38,23 @@ const Faqs = () => {
 
   // STYLES
   const layoutStyles = {
-    background:
-      "bg-gradient-to-b from-green to-lightGreen h-full w-screen z-0 pb-12",
-    buttonContainer: "relative flex flex-col justify-center items-center my-8",
-    button:
-      "text-mono bg-button text-white text-md rounded-xl w-80 px-8 py-3 mx-2 my-3 hover:bg-accent z-40",
+    background: "bg-green to-lightGreen h-full w-screen z-0 ",
+    buttonContainer:
+      "relative flex flex-col justify-center items-center my-8 bg-white w-full md:py-8",
     serviceCard:
       "bg-white m-10 p-8 rounded-lg border-2 border-white hover:border-accent flex flex-col justify-center items-center",
     cardImage: "w-80 ",
-    textContainer: "relative mx-10 z-30",
+    textContainer: "relative mx-10 md:px-12 lg:px-20 xl:px-40",
   };
 
   const textStyles = {
-    title: "text-white text-2xl pt-32 pb-8 text-center text-5xl",
+    title: "text-white pt-32 pb-8 text-center text-5xl md:text-4xl",
     subtitle:
       "text-lightGreen tracking-widest text-center font-bold text-5xl pt-4 pb-4 ",
     subtitleAccent:
       "underline decoration-accent decoration-wavy text-md text-white font-bold",
-    questionText: "text-white text-md mx-3 my-3",
-    listItem: "list-none text-white my-2",
+    questionText: "text-white text-md bg-green mx-4 mb-4",
+    listItem: "list-disc text-white my-2 ml-8",
   };
 
   return (
@@ -85,15 +80,15 @@ const Faqs = () => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={textStyles.questionText}>
-                Absolutely! We specialise in website redesigns! We will improve:
+                Absolutely! We specialise in website redesigns! We can improve:
                 <li className={textStyles.listItem}>
-                  <strong>User Friendly Design</strong>
+                  <strong>User Friendly and Responsive UI Design</strong>
                 </li>
                 <li className={textStyles.listItem}>
                   <strong>Functional User Experience</strong>
                 </li>
                 <li className={textStyles.listItem}>
-                  <strong>Information Architecture</strong>
+                  <strong>Website structure</strong>
                 </li>
               </AccordionItemPanel>
             </AccordionItem>
@@ -110,14 +105,14 @@ const Faqs = () => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={textStyles.questionText}>
-                For our starter <a href="#day">Website in a day</a> package the
-                website can be delivered to you within 24 hours upon receiving
-                all content required, with additional time for any addons you
-                have included. <br />
+                For our starter <a href="#day">FastTrack Build</a> we aim to
+                deliver the website within 2 working days after we have received
+                all your information, i.e. images, text etc.
                 <br />
-                For our more advanced packages, depending on the size, we aim to
-                have this to you between 4-6 weeks from initial consultation to
-                launch.
+                <br />
+                For our more advanced builds, depending on the size, we aim to
+                have this to you between 5 working days to a month, depening on
+                the size from initial consultation to launch.
               </AccordionItemPanel>
             </AccordionItem>
           </Accordion>
@@ -133,9 +128,9 @@ const Faqs = () => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={textStyles.questionText}>
-                For all our pricing, please refer to our{" "}
-                <a href="#services">Services</a> page. Alternatively, you can
-                contact us directly via our <a href="#contact">Contact</a> page
+                Build packages start from £150. You can find out more on our{" "}
+                <a href="/#services">Services</a> page . Alternatively, you can
+                contact us directly via our <a href="/#contact">Contact</a> page
                 for more personalised pricing.
               </AccordionItemPanel>
             </AccordionItem>
@@ -152,29 +147,32 @@ const Faqs = () => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={textStyles.questionText}>
-                Yes we absolutely do! For a monthly subscription of £12, you can
-                join the <a href="/#subs">JWD Squad</a> and have access to
-                services such as:
+                Yes we absolutely do! This can be funded by paying our hourly
+                rate of £50 or you can join the JWD Squad!
+                <br />
+                <br />
+                For a monthly subscription of £15, you can join the{" "}
+                <a href="/#subs">JWD Squad</a> and have access to services such
+                as:
                 <li className={textStyles.listItem}>
                   <strong>
-                    4 x 1 hour content updates spread throughout the year or to
+                    4 hours of content updates spread throughout 12 months to
                     use as you see fit
                   </strong>
                 </li>
                 <li className={textStyles.listItem}>
-                  <strong> servicing and maintenance when required</strong>
+                  <strong>Servicing and maintenance when required</strong>
                 </li>
                 <li className={textStyles.listItem}>
-                  <strong> security and accessibility updates</strong>
+                  <strong>Security and accessibility updates</strong>
                 </li>
                 <li className={textStyles.listItem}>
                   <strong>
                     20% reduction in fees for projects you buy in the future.
                   </strong>
                 </li>
-                <br />
-                We do also offer maintenance outside of the JWD Squad, but it
-                will be priced at our hourly/daily rate.
+                Plus more! Find out how you can join the JWD Squad and save on
+                website updates and maintenance <a href="/#jwdSquad">here</a>
               </AccordionItemPanel>
             </AccordionItem>
           </Accordion>
@@ -190,9 +188,13 @@ const Faqs = () => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={textStyles.questionText}>
-                As standard, we offer basic SEO improvements for your website
-                across all packages, however this is not currently something we
-                specialise in... yet!
+                We offer basic SEO for your website in our StartUp and Business
+                Build packages. This will include a meta description, an
+                effective website title and the use of keywords and phrases for
+                on-page SEO.
+                <br />
+                {/* For more information on SEO tips as a business owner, please see
+                our blog which can be found <a href="#">here</a> */}
               </AccordionItemPanel>
             </AccordionItem>
           </Accordion>
@@ -208,9 +210,7 @@ const Faqs = () => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={textStyles.questionText}>
-                No, this is not something we offer... yet! However we do offer
-                client support documentation to help with utilising keywords
-                etc. for when it comes to your writing.
+                Yes, but at an additional cost to all packages
               </AccordionItemPanel>
             </AccordionItem>
           </Accordion>
@@ -228,9 +228,17 @@ const Faqs = () => {
               <AccordionItemPanel className={textStyles.questionText}>
                 The security of your website is built into our build process.
                 This means we implement the best practices such as secure coding
-                standards, SSL certificates, regular software updates,and
+                standards, SSL certificates across all packages.
+                <br />
+                <br />
+                As a member of the JWD Squad aka our technical support
+                subscription service, we provide regular software updates and
                 ongoing security monitoring to protect against threats and
                 vulnerabilities through the use of the Vercel hosting platform.
+                <br />
+                <br />
+                You can find out more about the JWD Squad{" "}
+                <a href="/#jwdSquad">here</a>
               </AccordionItemPanel>
             </AccordionItem>
           </Accordion>
@@ -263,9 +271,8 @@ const Faqs = () => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={textStyles.questionText}>
-                This is something we can do, however there will be additional
-                fees and we would encourage you to mention this in your initial
-                meeting.
+                This is something we can do, however there will be as additional
+                cost, plus an extension to your estimated build time.
               </AccordionItemPanel>
             </AccordionItem>
           </Accordion>
@@ -273,11 +280,16 @@ const Faqs = () => {
       </motion.div>
 
       <div className={layoutStyles.buttonContainer}>
-        <Link to="contact">
-          <button className={layoutStyles.button}>
-            Get in touch for more info
-          </button>
-        </Link>
+        <h3 className="mx-10 md:mx-20 text-center">
+          At Jorvik Web Dev, transparency is at the core of our ethos. <br />
+          <br />
+          If your question has not been answered above, please do not hesitate
+          to contact our Chief, Hannah directly via{" "}
+          <strong className="text-button hover:text-accent cursor-pointer">
+            hello@jorvikweb.dev
+          </strong>{" "}
+          or through our contact page.
+        </h3>
       </div>
     </motion.div>
   );
