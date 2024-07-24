@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
   return (
     <div id="privacyPolicy" className={styles.background}>
       <h1 className="pt-32 text-2xl">Privacy Policy</h1>
-      <strong>Last updated: 24/07/2024</strong>
+      <strong className="text-xs">Last updated: 24/07/2024</strong>
       <p className="pt-6">
         Welcome to Jorvik Web Dev (&apos;we,&apos; &apos;our,&apos; or
         &apos;us&apos;). We are committed to protecting and respecting your
@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
       </p>
 
       {/* COLLECTION */}
-      <h2 className="font-bold text-md mt-2">1. Information We Collect</h2>
+      <h2 className="font-bold text-md mt-4">1. Information We Collect</h2>
       <p>We may collect and process the following data about you:</p>
       <h3 className="font-bold text-sm mt-2">1.1. Personal Data</h3>
       <li>
@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
       </li>
 
       {/* USE */}
-      <h2 className="font-bold text-md mt-2">2. How We Use Your Information</h2>
+      <h2 className="font-bold text-md mt-4">2. How We Use Your Information</h2>
       <p>We may collect and process the following data about you:</p>
       <li>
         To provide and manage our services: Including managing your requests and
@@ -73,7 +73,7 @@ const PrivacyPolicy = () => {
       </li>
 
       {/* SHARING */}
-      <h2 className="font-bold text-md mt-2">3. Sharing Your Information</h2>
+      <h2 className="font-bold text-md mt-4">3. Sharing Your Information</h2>
       <p>
         We do not sell or rent your personal data to third parties. We may share
         your information in the following circumstances:
@@ -90,7 +90,7 @@ const PrivacyPolicy = () => {
       </li>
 
       {/* DATA PROTECTION */}
-      <h2 className="font-bold text-md mt-2">4. Your Data Protection Rights</h2>
+      <h2 className="font-bold text-md mt-4">4. Your Data Protection Rights</h2>
       <p>You have the following rights regarding your personal data:</p>
       <li>
         Access: You have the right to request access to the personal data we
@@ -122,7 +122,7 @@ const PrivacyPolicy = () => {
       </p>
 
       {/* SECURITY */}
-      <h2 className="font-bold text-md mt-2">
+      <h2 className="font-bold text-md mt-4">
         5. Security of Your Information
       </h2>
       <p>
@@ -135,7 +135,7 @@ const PrivacyPolicy = () => {
       </p>
 
       {/* DATA RETENTION */}
-      <h2 className="font-bold text-md mt-2">6. Data Retention</h2>
+      <h2 className="font-bold text-md mt-4">6. Data Retention</h2>
       <p>
         We will retain your personal data only for as long as necessary to
         fulfill the purposes for which we collected it, including for the
@@ -143,7 +143,7 @@ const PrivacyPolicy = () => {
       </p>
 
       {/* DATA RETENTION */}
-      <h2 className="font-bold text-md mt-2">
+      <h2 className="font-bold text-md mt-4">
         7. Changes to This Privacy Policy
       </h2>
       <p>
@@ -153,10 +153,8 @@ const PrivacyPolicy = () => {
       </p>
 
       {/* CONTACT US */}
-      <h2 className="font-bold text-md mt-2">
-        7. Changes to This Privacy Policy
-      </h2>
-      <p>
+
+      <p className="pt-8">
         If you have any questions about this Privacy Policy, please contact us
         at:
       </p>
