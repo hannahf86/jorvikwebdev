@@ -3,9 +3,6 @@
 // REACT
 import { useRef } from "react";
 
-// REACT ROUTER DOM
-import { Link } from "react-router-dom";
-
 // MOTION
 import { motion } from "framer-motion";
 
@@ -34,7 +31,7 @@ const Services = () => {
 
   const layoutStyles = {
     background:
-      "bg-gradient-to-b from-green to-lightGreen h-full w-screen z-0 pb-12",
+      "bg-gradient-to-b from-green to-lightGreen h-full w-screen z-0 ",
     button:
       "text-mono bg-button text-white text-base rounded-xl w-60 py-3 mx-2 my-3 hover:bg-accent md:text-md md:w-48",
     logo: "flex flex-col justify-center items-center pt-32",
@@ -47,7 +44,7 @@ const Services = () => {
     cardImage: "w-32 col-start-1 row-span-2 pr-1",
     cardTitle:
       "text-left pl-2 font-bold text-xl text-black col-start-2 col-span-2 self-center",
-    price: "text-left pl-2 col-start-2",
+    price: "text-left pl-2 col-start-2 text-black",
     cardDesc: "row-start-3 row-span-10 col-span-3 col-start-1 items-start mt-4",
     listItem: "list-none my-2 ml-4 text-black",
   };
@@ -86,9 +83,17 @@ const Services = () => {
           <div className={layoutStyles.descContainer}>
             <h3 className={textStyles.desc}>
               All websites come with up-to-date security and accessibility
-              requirements
+              requirements{" "}
+              <strong className={textStyles.subtitleAccent}>as standard</strong>
+              .
             </h3>
-            <h3 className={textStyles.subtitleAccent}>as standard.</h3>
+            <br />
+            <br />
+            <h3 className="text-white text-base mt-8">
+              Select a build that fits your criteria as closely as possible,
+              then get in touch via our contact page, or you can email{" "}
+              <strong className="font-bold "> hello@jorvikweb.dev</strong>
+            </h3>
           </div>
         </div>
       </motion.div>
@@ -98,290 +103,285 @@ const Services = () => {
         className={layoutStyles.servicesContainer}
         variants={variants}>
         {/* --------- ITEM 01 --------- */}
-        <Link to="fasttrack">
-          <div className={layoutStyles.serviceCard}>
-            <div className={layoutStyles.cardLayout}>
-              <img
-                src="./FastTrack.webp"
-                alt="fast track build image"
-                className={layoutStyles.cardImage}
-              />
-              <h2 className={layoutStyles.cardTitle}>FastTrack Build</h2>
-              <h4 className={layoutStyles.price}>from £150</h4>
 
-              <h3 className={layoutStyles.cardDesc}>
-                <p className="mb-2 font-bold text-black self-start">
-                  Included in this package...
-                </p>
-                {/* DETAILS */}
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Up to <strong>4</strong> pages
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Modern UI responsive design
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Contact form with <strong>1</strong> custom email
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    Footer & Google approved sitemap
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    <strong>FREE</strong> favicon
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>Two calls to action</li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Up to <strong>5</strong> stock photos
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    Links to your social media pages
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Receive all files upon completion
-                  </li>
-                </div>
-              </h3>
-            </div>
+        <div className={layoutStyles.serviceCard}>
+          <div className={layoutStyles.cardLayout}>
+            <img
+              src="./FastTrack.webp"
+              alt="fast track build image"
+              className={layoutStyles.cardImage}
+            />
+            <h2 className={layoutStyles.cardTitle}>FastTrack Build</h2>
+            <h4 className={layoutStyles.price}>from £150</h4>
+
+            <h3 className={layoutStyles.cardDesc}>
+              <p className="mb-2 font-bold text-black self-start">
+                Included in this package...
+              </p>
+              {/* DETAILS */}
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Up to <strong>4</strong> pages
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Modern UI responsive design
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Contact form with <strong>1</strong> custom email
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  Footer & Google approved sitemap
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  <strong>FREE</strong> favicon
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>Two calls to action</li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Up to <strong>5</strong> stock photos
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  Links to your social media pages
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Receive all files upon completion
+                </li>
+              </div>
+            </h3>
           </div>
-        </Link>
+        </div>
 
         {/* --------- ITEM 02 --------- */}
-        <Link to="startUp">
-          <div className={layoutStyles.serviceCard}>
-            <div className={layoutStyles.cardLayout}>
-              <img
-                src="./StartUp.webp"
-                alt="fast track build image"
-                className={layoutStyles.cardImage}
-              />
-              <h2 className={layoutStyles.cardTitle}>StartUp Build</h2>
-              <h3 className={layoutStyles.cardDesc}>
-                <p className="mb-2 font-bold text-black">
-                  Included in this package...
-                </p>
-                {/* DETAILS */}
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Up to <strong>6</strong> pages
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Modern UI responsive design
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Contact form with <strong>3</strong> custom email
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    Footer & Google approved sitemap
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    <strong>FREE</strong> favicon
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>Two calls to action</li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Up to <strong>8</strong> stock photos
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    Links to your social media pages
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    Basic SEO implementation
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    <strong>FREE</strong> domain set up
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    One year&apos;s <strong>FREE</strong> hosting
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Receive all files upon completion
-                  </li>
-                </div>
-              </h3>
-              <h4 className={layoutStyles.price}>from £295</h4>
-            </div>
+
+        <div className={layoutStyles.serviceCard}>
+          <div className={layoutStyles.cardLayout}>
+            <img
+              src="./StartUp.webp"
+              alt="fast track build image"
+              className={layoutStyles.cardImage}
+            />
+            <h2 className={layoutStyles.cardTitle}>StartUp Build</h2>
+            <h3 className={layoutStyles.cardDesc}>
+              <p className="mb-2 font-bold text-black">
+                Included in this package...
+              </p>
+              {/* DETAILS */}
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Up to <strong>6</strong> pages
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Modern UI responsive design
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Contact form with <strong>3</strong> custom email
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  Footer & Google approved sitemap
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  <strong>FREE</strong> favicon
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>Two calls to action</li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Up to <strong>8</strong> stock photos
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  Links to your social media pages
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  Basic SEO implementation
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  <strong>FREE</strong> domain set up
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  One year&apos;s <strong>FREE</strong> hosting
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Receive all files upon completion
+                </li>
+              </div>
+            </h3>
+            <h4 className={layoutStyles.price}>from £295</h4>
           </div>
-        </Link>
+        </div>
 
         {/* --------- ITEM 03 --------- */}
-        <Link to="business">
-          <div className={layoutStyles.serviceCard}>
-            <div className={layoutStyles.cardLayout}>
-              <img
-                src="./Business.webp"
-                alt="business build image"
-                className={layoutStyles.cardImage}
-              />
-              <h2 className={layoutStyles.cardTitle}>Business Build</h2>
-              <h3 className={layoutStyles.cardDesc}>
-                <p className="mb-2 font-bold text-black">
-                  Included in this package...
-                </p>
-                {/* DETAILS */}
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Up to <strong>10</strong> pages
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Modern UI responsive design
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Animated page transitions
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Animated menu navigation
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Image gallery design
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    UX research & user journeys
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Contact form with <strong>5</strong> custom email
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    Footer & Google approved sitemap
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    <strong>FREE</strong> favicon
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>Two calls to action</li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Up to <strong>10</strong> stock photos
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    Links to your social media pages
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    Basic SEO implementation
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    Analytics implementation
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    <strong>FREE</strong> domain set up
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />{" "}
-                  <li className={layoutStyles.listItem}>
-                    One year&apos;s <strong>FREE</strong> hosting
-                  </li>
-                </div>
-                <div className="flex items-center">
-                  <FaCheck className="text-lightGreen" />
-                  <li className={layoutStyles.listItem}>
-                    Receive all files upon completion
-                  </li>
-                </div>
-              </h3>
-              <h4 className={layoutStyles.price}>from £550</h4>
-            </div>
+
+        <div className={layoutStyles.serviceCard}>
+          <div className={layoutStyles.cardLayout}>
+            <img
+              src="./Business.webp"
+              alt="business build image"
+              className={layoutStyles.cardImage}
+            />
+            <h2 className={layoutStyles.cardTitle}>Business Build</h2>
+            <h3 className={layoutStyles.cardDesc}>
+              <p className="mb-2 font-bold text-black">
+                Included in this package...
+              </p>
+              {/* DETAILS */}
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Up to <strong>10</strong> pages
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Modern UI responsive design
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Animated page transitions
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Animated menu navigation
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>Image gallery design</li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  UX research & user journeys
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Contact form with <strong>5</strong> custom email
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  Footer & Google approved sitemap
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  <strong>FREE</strong> favicon
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>Two calls to action</li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Up to <strong>10</strong> stock photos
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  Links to your social media pages
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  Basic SEO implementation
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  Analytics implementation
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  <strong>FREE</strong> domain set up
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />{" "}
+                <li className={layoutStyles.listItem}>
+                  One year&apos;s <strong>FREE</strong> hosting
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Receive all files upon completion
+                </li>
+              </div>
+            </h3>
+            <h4 className={layoutStyles.price}>from £550</h4>
           </div>
-        </Link>
+        </div>
       </motion.div>
       {/* --------- CALL TO ACTION --------- */}
       <div className="w-full bg-white py-8 px-10 text-center md:col-start-1 md:col-span-2 md:max-h-60 md:py-4 md:mt-16">
