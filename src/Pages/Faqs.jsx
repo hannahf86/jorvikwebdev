@@ -284,7 +284,7 @@ const Faqs = () => {
           At Jorvik Web Dev, transparency is at the core of our ethos. <br />
           <br />
           If your question has not been answered above, please do not hesitate
-          to contact our Jarl, Hannah directly via{" "}
+          to contact our Jarl, Hannah, directly via{" "}
           <strong className="text-button hover:text-accent cursor-pointer">
             hello@jorvikweb.dev
           </strong>{" "}

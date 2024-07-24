@@ -37,12 +37,12 @@ const Services = () => {
       "bg-gradient-to-b from-green to-lightGreen h-full w-screen z-0 pb-12",
     button:
       "text-mono bg-button text-white text-base rounded-xl w-60 py-3 mx-2 my-3 hover:bg-accent md:text-md md:w-48",
-    logo: "flex flex-col justify-center items-center pt-24",
+    logo: "flex flex-col justify-center items-center pt-32",
     descContainer: "flex flex-col mx-10 text-center",
 
     servicesContainer: "flex flex-wrap justify-center mb-10",
     serviceCard:
-      "bg-white mx-10 mt-10 p-8 rounded-lg border-2 border-white hover:border-accent md:mx-6 max-w-96",
+      "bg-white mx-10 mt-10 p-8 rounded-lg border-2 border-white hover:border-accent md:mx-6 max-w-100",
     cardLayout: "grid grid-cols-3 grid-rows-15",
     cardImage: "w-32 col-start-1 row-span-2 pr-1",
     cardTitle:

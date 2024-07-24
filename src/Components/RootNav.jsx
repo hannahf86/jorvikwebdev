@@ -52,7 +52,7 @@ const RootNav = () => {
       "fixed w-screen h-24 bg-gradient-to-b from-green to-[#318D2F] z-40",
     logo: "absolute right-16 z-[99] cursor-pointer",
     fullMenu:
-      "bg-white fixed w-screen h-screen p-20 md:p-0 flex flex-col justify-center items-center z-30 md:w-4/6",
+      "bg-white fixed w-screen h-screen p-20 md:p-0 flex flex-col justify-center items-center z-30 md:w-4/6 lg:w-3/6 ",
     menuItem:
       "bg-button text-white w-80 h-16 m-8 rounded-lg flex justify-center items-center sm:w-96 sm:h-16 sm:my-8 hover:bg-accent hover:text-white",
     menuIcon: "mr-2 tracking-widest text-md sm:text-md",
@@ -131,8 +131,8 @@ const RootNav = () => {
             <Link to="services" className={desktopStyles.link}>
               SERVICES
             </Link>
-            <Link to="about" className={desktopStyles.link}>
-              PRICING
+            <Link to="faqs" className={desktopStyles.link}>
+              FAQs
             </Link>
           </div>
         </nav>
