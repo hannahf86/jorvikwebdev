@@ -88,7 +88,7 @@ const Footer = () => {
           ________________________________________
         </p>
         <div className={layoutStyles.legalLinkContainer}>
-          <Link to="privacy" className={layoutStyles.privacy}>
+          <Link to="privacyPolicy" className={layoutStyles.privacy}>
             PRIVACY POLICY
           </Link>
           <Link to="terms" className={layoutStyles.privacy}>

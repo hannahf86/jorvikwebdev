@@ -1,16 +1,19 @@
-// STYLES
-import "./privacy.scss";
+// ICONS
+import { FaUserCircle } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { MdOutlinePhoneAndroid } from "react-icons/md";
 
 const PrivacyPolicy = () => {
   const styles = {
-    background: "flex flex-col text-black mx-10",
+    background: "flex flex-col text-white mx-40 justify-center pb-12",
   };
 
   return (
     <div id="privacyPolicy" className={styles.background}>
-      <h1>Privacy Policy</h1>
-      <strong>Last updated: 03/07/2024</strong>
-      <p>
+      <h1 className="pt-32 text-2xl">Privacy Policy</h1>
+      <strong>Last updated: 24/07/2024</strong>
+      <p className="pt-6">
         Welcome to Jorvik Web Dev (&apos;we,&apos; &apos;our,&apos; or
         &apos;us&apos;). We are committed to protecting and respecting your
         privacy. This Privacy Policy explains how we collect, use, disclose, and
@@ -21,9 +24,9 @@ const PrivacyPolicy = () => {
       </p>
 
       {/* COLLECTION */}
-      <h2>1. Information We Collect</h2>
+      <h2 className="font-bold text-md mt-2">1. Information We Collect</h2>
       <p>We may collect and process the following data about you:</p>
-      <h3>1.1. Personal Data</h3>
+      <h3 className="font-bold text-sm mt-2">1.1. Personal Data</h3>
       <li>
         Contact Information: Such as name, email address, phone number, and
         postal address.
@@ -31,7 +34,7 @@ const PrivacyPolicy = () => {
       <li>
         Professional Information: Such as job title, company name, and industry.
       </li>
-      <h3>1.2. Technical Data</h3>
+      <h3 className="font-bold text-sm mt-2">1.2. Technical Data</h3>
       <li>
         Usage Data: Includes information about how you use our website,
         products, and services.
@@ -44,7 +47,7 @@ const PrivacyPolicy = () => {
       </li>
 
       {/* USE */}
-      <h2>2. How We Use Your Information</h2>
+      <h2 className="font-bold text-md mt-2">2. How We Use Your Information</h2>
       <p>We may collect and process the following data about you:</p>
       <li>
         To provide and manage our services: Including managing your requests and
@@ -70,7 +73,7 @@ const PrivacyPolicy = () => {
       </li>
 
       {/* SHARING */}
-      <h2>3. Sharing Your Information</h2>
+      <h2 className="font-bold text-md mt-2">3. Sharing Your Information</h2>
       <p>
         We do not sell or rent your personal data to third parties. We may share
         your information in the following circumstances:
@@ -87,7 +90,7 @@ const PrivacyPolicy = () => {
       </li>
 
       {/* DATA PROTECTION */}
-      <h2>4. Your Data Protection Rights</h2>
+      <h2 className="font-bold text-md mt-2">4. Your Data Protection Rights</h2>
       <p>You have the following rights regarding your personal data:</p>
       <li>
         Access: You have the right to request access to the personal data we
@@ -119,7 +122,9 @@ const PrivacyPolicy = () => {
       </p>
 
       {/* SECURITY */}
-      <h2>5. Security of Your Information</h2>
+      <h2 className="font-bold text-md mt-2">
+        5. Security of Your Information
+      </h2>
       <p>
         We use administrative, technical, and physical security measures to help
         protect your personal data. While we have taken reasonable steps to
@@ -130,7 +135,7 @@ const PrivacyPolicy = () => {
       </p>
 
       {/* DATA RETENTION */}
-      <h2>6. Data Retention</h2>
+      <h2 className="font-bold text-md mt-2">6. Data Retention</h2>
       <p>
         We will retain your personal data only for as long as necessary to
         fulfill the purposes for which we collected it, including for the
@@ -138,7 +143,9 @@ const PrivacyPolicy = () => {
       </p>
 
       {/* DATA RETENTION */}
-      <h2>7. Changes to This Privacy Policy</h2>
+      <h2 className="font-bold text-md mt-2">
+        7. Changes to This Privacy Policy
+      </h2>
       <p>
         We may update this Privacy Policy from time to time. We will notify you
         of any changes by posting the new Privacy Policy on this page. You are
@@ -146,16 +153,29 @@ const PrivacyPolicy = () => {
       </p>
 
       {/* CONTACT US */}
-      <h2>7. Changes to This Privacy Policy</h2>
+      <h2 className="font-bold text-md mt-2">
+        7. Changes to This Privacy Policy
+      </h2>
       <p>
         If you have any questions about this Privacy Policy, please contact us
         at:
       </p>
-      <li>Jorvik Web Dev</li>
-      <li>42 Seebohm Mews, York</li>
-      <li>YO31 0SJ</li>
-      <li>hello@jorvikweb.dev</li>
-      <li>07548957500</li>
+      <li className="list-none pt-3 flex items-center">
+        <FaUserCircle className="mr-2" />
+        Jorvik Web Dev
+      </li>
+      <li className="list-none flex items-center">
+        <FaLocationDot className="mr-2" />
+        42 Seebohm Mews, York, YO31 0SJ
+      </li>
+      <li className="list-none flex items-center">
+        <MdEmail className="mr-2" />
+        hello@jorvikweb.dev
+      </li>
+      <li className="list-none flex items-center">
+        <MdOutlinePhoneAndroid className="mr-2" />
+        07548957500
+      </li>
     </div>
   );
 };
