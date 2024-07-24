@@ -43,7 +43,7 @@ const Landing = () => {
     logo: "flex flex-col justify-center items-center pt-24 lg:col-start-1 lg:row-start-1 lg:justify-start lg:items-start",
     textContainer:
       "relative mx-10 z-30 xl:grid grid-cols-4 grid-rows-3 lg:flex lg:flex-col",
-    image: "hidden xl:block",
+    image: "hidden xl:block items-start",
     buttonContainer:
       "relative flex flex-col justify-center items-center md:flex-row lg:justify-start lg:col-start-1 lg:row-start-4",
     button:
@@ -55,7 +55,7 @@ const Landing = () => {
     title:
       "text-white font-bold text-5xl pb-8 text-center lg:text-left lg:col-start-1 lg:col-span-3 lg:row-start-2",
     subtitle:
-      "text-lightGreen tracking-widest text-center font-bold text-sm pt-12 pb-4 lg:text-left lg:row-start-2",
+      "text-lightGreen tracking-widest text-center font-bold text-sm pt-12 xl:pt-2 pb-4 lg:text-left lg:row-start-2",
     desc: "text-white text-base text-center pb-8 lg:text-left lg:row-start-3 lg:col-span-2",
     slidingText:
       "absolute -bottom-40 whitespace-nowrap z-10 text-9xl font-serif font-bold text-white/30",
@@ -99,7 +99,7 @@ const Landing = () => {
             Friendly and professional, putting your goals first.
           </motion.h3>
 
-          <div className="lg:col-start-3 lg:row-start-2 lg:row-span-3 lg:col-span-2 lg:justify-self-end">
+          <div className="lg:col-start-3 lg:row-start-1 lg:row-span-4 lg:col-span-2 lg:justify-self-end lg:self-center">
             <img
               id="heroImage"
               src="/hero.png"
