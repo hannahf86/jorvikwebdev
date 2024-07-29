@@ -6,7 +6,8 @@ import { MdOutlinePhoneAndroid } from "react-icons/md";
 
 const PrivacyPolicy = () => {
   const styles = {
-    background: "flex flex-col text-white mx-40 justify-center pb-12",
+    background:
+      "flex flex-col text-white mx-12 md:mx-32 lg:mx-40 justify-center pb-12",
   };
 
   return (
