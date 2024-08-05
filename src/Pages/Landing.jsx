@@ -79,7 +79,7 @@ const Landing = () => {
               variants={textVariants}
               className={textStyles.subtitle}
               id="subtitle">
-              LATEST PRODUCT - from £150
+              LATEST PRODUCT - from £180
             </motion.h2>
             <motion.h1
               variants={textVariants}

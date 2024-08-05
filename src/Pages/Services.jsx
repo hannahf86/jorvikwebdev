@@ -55,7 +55,7 @@ const Services = () => {
     subtitle:
       "text-lightGreen tracking-widest text-center font-bold text-5xl pt-4 pb-4 ",
     subtitleAccent:
-      "underline decoration-accent decoration-wavy text-md text-white font-bold",
+      "underline decoration-accent decoration-double text-md text-white font-bold",
     desc: "text-white text-base text-center ",
   };
 
