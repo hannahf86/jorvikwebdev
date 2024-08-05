@@ -14,7 +14,7 @@ const Footer = () => {
     logo: "w-20",
 
     newsletterContainer:
-      "md:col-start-2 md:row-start-1 md:col-span-3 md:row-span-2",
+      "md:col-start-2 md:row-start-1 md:col-span-3 md:row-span-2 pl-20 pt-4",
     desc: "text-white text-sm mb-3",
     form: "flex",
     button:
@@ -30,7 +30,7 @@ const Footer = () => {
     navLink: "hover:text-accent font-thin text-xs",
 
     legalContainer:
-      "flex flex-col justify-center mt-2 md:row-start-3 md:col-start-2 md:col-end-4",
+      "flex flex-col justify-center mt-2 md:row-start-3 md:col-start-2 md:col-end-4 pl-20",
     legalLinkContainer:
       "flex justify-between mx-10 sm:mx-32 md:mx-0 md:justify-start",
     privacy:
