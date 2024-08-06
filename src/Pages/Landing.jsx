@@ -36,6 +36,15 @@ const sliderVariants = {
 };
 
 const Landing = () => {
+  // TOP OF PAGE
+  const toTop = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   // STYLES
   const layoutStyles = {
     background:
@@ -109,10 +118,10 @@ const Landing = () => {
           </div>
 
           <div className={layoutStyles.buttonContainer} id="buttonContainer">
-            <Link to="services">
+            <Link to="services" onClick={toTop}>
               <button className={layoutStyles.button}>Find out more</button>
             </Link>
-            <Link to="contact">
+            <Link to="contact" onClick={toTop}>
               <button className={layoutStyles.button}>Get in touch</button>
             </Link>
           </div>

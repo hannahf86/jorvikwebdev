@@ -44,7 +44,14 @@ const RootNav = () => {
     setOpen(!open);
   };
 
-  // 318D2F
+  // TOP OF PAGE
+  const toTop = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 
   // STYLES
   const mobileStyles = {
@@ -76,21 +83,21 @@ const RootNav = () => {
 
         <motion.div variants={variants} className={mobileStyles.fullMenu}>
           <motion.div onClick={handleNav}>
-            <Link to="/">
+            <Link to="/" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
                 <HiHome className={mobileStyles.menuIcon} />
                 <p className="text-sm sm:text-md">Home</p>
               </span>
             </Link>
 
-            <Link to="services">
+            <Link to="services" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
                 <HiBriefcase className={mobileStyles.menuIcon} />
                 <p className="text-sm sm:text-md">Services</p>
               </span>
             </Link>
 
-            <Link to="about">
+            <Link to="about" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
                 <HiBookOpen className={mobileStyles.menuIcon} />
                 <p className="text-sm sm:text-md">Why Us</p>
@@ -104,14 +111,14 @@ const RootNav = () => {
               </span>
             </Link> */}
 
-            <Link to="faqs">
+            <Link to="faqs" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
                 <TbMessage2Question className={mobileStyles.menuIcon} />
                 <p className="text-sm sm:text-md">FAQs</p>
               </span>
             </Link>
 
-            <Link to="contact">
+            <Link to="contact" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
                 <HiMail className={mobileStyles.menuIcon} />
                 <p className="text-sm sm:text-md">Contact</p>
@@ -128,10 +135,10 @@ const RootNav = () => {
         <nav>
           {/* LINKS */}
           <div className={desktopStyles.linkSubContainer}>
-            <Link to="services" className={desktopStyles.link}>
+            <Link to="services" onClick={toTop} className={desktopStyles.link}>
               SERVICES
             </Link>
-            <Link to="faqs" className={desktopStyles.link}>
+            <Link to="faqs" onClick={toTop} className={desktopStyles.link}>
               FAQs
             </Link>
           </div>

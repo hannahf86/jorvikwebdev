@@ -397,11 +397,8 @@ const Services = () => {
           business.
           <br />
           <br />
-          Addons, such as videos, blogs etc. can be added.
-          <br />
-          <br />
-          Our packages are more what you&apos;d call &quot;guidelines&quot; than
-          actual rules.{" "}
+          Addons such as videos, blogs, image galleries, booking systems and
+          more can be added.
         </p>
         <p>
           Email{" "}

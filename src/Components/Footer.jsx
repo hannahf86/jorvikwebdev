@@ -7,6 +7,15 @@ import { FaMobileScreen } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
+  // TOP OF PAGE
+  const toTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   // STYLES
   const layoutStyles = {
     container:
@@ -91,19 +100,19 @@ const Footer = () => {
 
       {/* NAV */}
       <div id="navArea" className={layoutStyles.navContainer}>
-        <Link to="/" className={layoutStyles.navLink}>
+        <Link to="/" className={layoutStyles.navLink} onClick={toTop}>
           Home
         </Link>
-        <Link to="services" className={layoutStyles.navLink}>
+        <Link to="services" className={layoutStyles.navLink} onClick={toTop}>
           Services
         </Link>
-        <Link to="about" className={layoutStyles.navLink}>
+        <Link to="about" className={layoutStyles.navLink} onClick={toTop}>
           About
         </Link>
-        <Link to="faqs" className={layoutStyles.navLink}>
+        <Link to="faqs" className={layoutStyles.navLink} onClick={toTop}>
           FAQs
         </Link>
-        <Link to="contact" className={layoutStyles.navLink}>
+        <Link to="contact" className={layoutStyles.navLink} onClick={toTop}>
           Contact
         </Link>
       </div>
