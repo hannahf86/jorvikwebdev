@@ -18,9 +18,9 @@ const About = () => {
     logoText: "text-white font-bold",
     tagline: "text-white text-md ",
     title: "text-lightGreen font-bold text-6xl pb-8 text-center ",
-    subtitle: "text-white font-bold text-2xl pb-2 py-4 text-center ",
+    subtitle: "text-white font-bold text-2xl pt-8 pb-4 text-center ",
     sectionTitle:
-      "text-white underline decoration-accent decoration-wavy font-bold pt-6 pb-2 text-lg",
+      "text-white underline decoration-accent decoration-double font-bold pt-6 pb-2 text-lg",
     desc: "text-white text-base  text-justify",
   };
 
@@ -44,9 +44,8 @@ const About = () => {
         <h1 className={textStyles.title}>About</h1>
         <div>
           <h2 className={textStyles.subtitle}>Why us?</h2>
-          <p className="text-center text-white text-lg pb-4">
-            Welcome to Jorvik Web Dev! <br />
-            We are small, yet mighty!
+          <p className="text-center text-white text-lg pb-8">
+            Welcome to Jorvik Web Dev! We are small, yet mighty!
           </p>
           <h2 className={textStyles.sectionTitle}>Who Are We?</h2>
           <p className="text-justify text-white text-base ">
@@ -128,8 +127,10 @@ const About = () => {
           </p>
         </div>
       </div>
+
+      {/* CALL TO ACTION */}
       <div className={layoutStyles.callToAction}>
-        <h3 className="mx-10 md:mx-20 text-center font-bold text-black">
+        <h3 className="text-center font-bold text-black text-base">
           Let&apos;s work together!
           <br />
           <br />

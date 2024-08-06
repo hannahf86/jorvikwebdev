@@ -68,8 +68,10 @@ const RootNav = () => {
   const desktopStyles = {
     container:
       "hidden md:block fixed flex w-3/6 top-0 right-0 h-24 bg-transparent z-40 items-center",
-    linkSubContainer: "absolute top-5 right-6 flex items-center",
+    linkSubContainer: "absolute top-8 right-6 flex items-center",
     link: "mx-12 font-bold text-white hover:bg-accent p-2 rounded-sm",
+    button:
+      "text-mono bg-button text-white text-sm rounded-lg px-6 py-3 hover:bg-accent",
   };
 
   return (
@@ -140,6 +142,11 @@ const RootNav = () => {
             </Link>
             <Link to="faqs" onClick={toTop} className={desktopStyles.link}>
               FAQs
+            </Link>
+            <Link to="contact" onClick={toTop}>
+              <button className={desktopStyles.button}>
+                Book your website
+              </button>
             </Link>
           </div>
         </nav>

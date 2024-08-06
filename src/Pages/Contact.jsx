@@ -98,7 +98,8 @@ const Contact = () => {
         </motion.h1>
         <motion.h2 variants={variants} className={textStyles.desc}>
           Please get in touch if you&apos;re interested in working together or
-          have any questions. We&apos;re happy to hear from you!
+          have any questions. <br />
+          We&apos;re happy to hear from you!
         </motion.h2>
       </div>
 

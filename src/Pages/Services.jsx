@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 
 // ICONS
 import { FaCheck } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const variants = {
   initial: {
@@ -33,7 +34,7 @@ const Services = () => {
     background:
       "bg-gradient-to-b from-green to-lightGreen h-full w-screen z-0 ",
     button:
-      "text-mono bg-button text-white text-base rounded-xl w-60 py-3 mx-2 my-3 hover:bg-accent md:text-md md:w-48",
+      "text-mono bg-button text-white text-md rounded-xl py-4 px-4 my-3 hover:bg-accent mb-12 ",
     logo: "flex flex-col justify-center items-center pt-32",
     descContainer: "flex flex-col mx-10 text-center",
 
@@ -47,6 +48,8 @@ const Services = () => {
     price: "text-left pl-2 col-start-2 text-black",
     cardDesc: "row-start-3 row-span-10 col-span-3 col-start-1 items-start mt-4",
     listItem: "list-none my-2 ml-4 text-black",
+
+    ctaContainer: "w-full bg-white py-8 px-10 text-center ",
   };
 
   const textStyles = {
@@ -57,6 +60,8 @@ const Services = () => {
     subtitleAccent:
       "underline decoration-accent decoration-double text-md text-white font-bold",
     desc: "text-white text-base text-center ",
+
+    ctaTitle: "text-accent text-lg font-bold",
   };
 
   return (
@@ -115,7 +120,7 @@ const Services = () => {
               className={layoutStyles.cardImage}
             />
             <h2 className={layoutStyles.cardTitle}>FastTrack Build</h2>
-            <h4 className={layoutStyles.price}>from £150</h4>
+            <h4 className={layoutStyles.price}>from £180</h4>
 
             <h3 className={layoutStyles.cardDesc}>
               <p className="mb-2 font-bold text-black self-start">
@@ -388,8 +393,16 @@ const Services = () => {
       </motion.div>
 
       {/* --------- CALL TO ACTION --------- */}
-      <div className="w-full bg-white py-8 px-10 text-center md:col-start-1 md:col-span-2 md:max-h-60 md:py-4 md:mt-16">
-        <h3 className="text-accent text-lg font-bold">
+      <div className={layoutStyles.ctaContainer}>
+        <div>
+          <Link>
+            <button className={layoutStyles.button}>
+              Book your website now
+            </button>
+          </Link>
+        </div>
+
+        <h3 className={textStyles.ctaTitle}>
           Can&apos;t find exactly what you&apos;re looking for?
         </h3>
         <p className="pt-2 pb-4">

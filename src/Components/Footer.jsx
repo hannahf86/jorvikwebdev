@@ -116,6 +116,7 @@ const Footer = () => {
           Contact
         </Link>
       </div>
+
       {/* LEGAL */}
       <div id="legal" className={layoutStyles.legalContainer}>
         <p className="text-center md:text-left text-white">
