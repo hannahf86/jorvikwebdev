@@ -41,6 +41,8 @@ const Services = () => {
     servicesContainer: "flex flex-wrap justify-center mb-10",
     serviceCard:
       "bg-white mx-10 mt-10 p-8 rounded-lg border-2 border-white md:mx-6 max-w-100",
+    squadCard:
+      "bg-white mx-10 mt-10 p-8 rounded-lg border-4 border-accent md:mx-6 max-w-100",
     cardLayout: "grid grid-cols-3 grid-rows-15",
     cardImage: "w-32 col-start-1 row-span-2 pr-1",
     cardTitle:
@@ -388,6 +390,61 @@ const Services = () => {
               </div>
             </h3>
             <h4 className={layoutStyles.price}>from £550</h4>
+          </div>
+        </div>
+
+        {/* --------- ITEM 04 --------- */}
+
+        <div className={layoutStyles.squadCard}>
+          <div className={layoutStyles.cardLayout}>
+            <img
+              src="./Business.webp"
+              alt="business build image"
+              className={layoutStyles.cardImage}
+            />
+            <h2 className={layoutStyles.cardTitle}>JWD Squad</h2>
+            <h3 className={layoutStyles.cardDesc}>
+              <p className="mb-2 font-bold text-black">
+                Join our sqaud with a monthly subscription and receive the
+                benefits of...
+              </p>
+              {/* DETAILS */}
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Security and accessibility updates
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Domain stability checks
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Two SEO updates over 12 months
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  25% discount on future products and services
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>
+                  Four hours worth of content updates over 12 months
+                </li>
+              </div>
+              <div className="flex items-center">
+                <FaCheck className="text-lightGreen" />
+                <li className={layoutStyles.listItem}>Website maintenance</li>
+              </div>
+            </h3>
+            <h4 className={layoutStyles.price}>£15 a month</h4>
           </div>
         </div>
       </motion.div>
