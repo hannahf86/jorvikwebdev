@@ -42,7 +42,7 @@ const Footer = () => {
     legalContainer:
       "flex flex-col justify-center mt-2 md:row-start-3 md:col-start-2 md:col-end-4 pl-20",
     legalLinkContainer:
-      "flex justify-between mx-10 sm:mx-32 md:mx-0 md:justify-start",
+      "flex justify-center mx-10 sm:mx-32 md:mx-0 md:justify-start",
     privacy:
       "text-center font-thin text-white text-xs tracking-widest hover:text-accent md:text-left md:mr-20",
   };
@@ -55,7 +55,7 @@ const Footer = () => {
         <h3 className="text-white font-bold">JORVIK WEB DEV</h3>
       </div>
       {/* NEWSLETTER */}
-      <div id="col01" className={layoutStyles.newsletterContainer}>
+      {/* <div id="col01" className={layoutStyles.newsletterContainer}>
         <p className={layoutStyles.desc}>
           Sign up to our newsletter to receive updates, offers and tips
         </p>
@@ -63,7 +63,7 @@ const Footer = () => {
           <input placeholder="Email" className={layoutStyles.input} />
           <button className={layoutStyles.button}>Sign up</button>
         </form>
-      </div>
+      </div> */}
 
       {/* SOCIAL ICONS */}
       <div id="socialIcons" className={layoutStyles.socialContainer}>
@@ -74,12 +74,12 @@ const Footer = () => {
           </small>
         </div>
 
-        <div className="flex mt-4">
+        {/* <div className="flex mt-4">
           <FaInstagram size={25} className={layoutStyles.contactIcons} />{" "}
           <small className="text-white tracking-wider text-sm">
             /jorvikwebdev
           </small>
-        </div>
+        </div> */}
       </div>
 
       <div className={layoutStyles.contactContainer}>
@@ -126,9 +126,9 @@ const Footer = () => {
           <Link to="privacyPolicy" className={layoutStyles.privacy}>
             PRIVACY POLICY
           </Link>
-          <Link to="terms" className={layoutStyles.privacy}>
+          {/* <Link to="terms" className={layoutStyles.privacy}>
             TERMS OF USE
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
