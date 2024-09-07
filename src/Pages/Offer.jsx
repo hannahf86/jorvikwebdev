@@ -9,6 +9,9 @@ import { motion } from "framer-motion";
 // REACT ROUTER DOM
 import { Link } from "react-router-dom";
 
+// ICONS
+import { BsStars } from "react-icons/bs";
+
 const variants = {
   initial: {
     x: -500,
@@ -51,6 +54,8 @@ const Offer = () => {
   const textStyles = {
     logoText: "text-white font-bold",
     title: "text-white text-2xl pb-8 text-center ",
+    secondTitle:
+      "text-accent text-4xl text-center flex content-center justify-center",
     subtitle:
       "text-lightGreen tracking-widest text-center font-bold xl:text-3xl lg:text-2xl pt-8 pb-4 ",
     savings: "text-white tracking-widest text-center text-lg lg:text-md pb-4 ",
@@ -76,6 +81,11 @@ const Offer = () => {
         </div>
 
         <div className="flex flex-col mx-6 justify-items-center">
+          <h1 className={textStyles.secondTitle}>
+            <BsStars className="mr-4" />
+            <motion.b>SEPTEMBER OFFERS</motion.b>
+            <BsStars className="ml-4" />
+          </h1>
           <div className={layoutStyles.gridContainer}>
             {/* ITEM 01 */}
             <div className="lg:col-start-1">
