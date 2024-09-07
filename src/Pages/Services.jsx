@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 
 // ICONS
 import { FaCheck } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const variants = {
   initial: {
@@ -113,7 +112,6 @@ const Services = () => {
         className={layoutStyles.servicesContainer}
         variants={variants}>
         {/* --------- ITEM 01 --------- */}
-
         <div className={layoutStyles.serviceCard}>
           <div className={layoutStyles.cardLayout}>
             <img
@@ -405,6 +403,10 @@ const Services = () => {
             <h2 className={layoutStyles.cardTitle}>JWD Squad</h2>
             <h3 className={layoutStyles.cardDesc}>
               <p className="mb-2 font-bold text-black">
+                Just because your website is complete does not mean the help
+                stops there!
+                <br />
+                <br />
                 Join our sqaud with a monthly subscription and receive the
                 benefits of...
               </p>
@@ -452,11 +454,11 @@ const Services = () => {
       {/* --------- CALL TO ACTION --------- */}
       <div className={layoutStyles.ctaContainer}>
         <div>
-          <Link>
+          <a href="/contact">
             <button className={layoutStyles.button}>
               Book your website now
             </button>
-          </Link>
+          </a>
         </div>
 
         <h3 className={textStyles.ctaTitle}>
@@ -467,8 +469,8 @@ const Services = () => {
           business.
           <br />
           <br />
-          Addons such as videos, blogs, image galleries, booking systems and
-          more can be added.
+          Addons such as videos, blogs, image galleries, booking systems are
+          available.
         </p>
         <p>
           Email{" "}

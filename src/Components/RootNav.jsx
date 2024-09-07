@@ -55,8 +55,7 @@ const RootNav = () => {
 
   // STYLES
   const mobileStyles = {
-    container:
-      "fixed w-screen h-24 bg-gradient-to-b from-green to-[#318D2F] z-40",
+    container: "fixed w-screen h-24 bg-green z-40",
     logo: "absolute right-16 z-[99] cursor-pointer",
     fullMenu:
       "bg-white fixed w-screen h-screen p-20 md:p-0 flex flex-col justify-center items-center z-30 md:w-4/6 lg:w-3/6 ",
@@ -85,7 +84,7 @@ const RootNav = () => {
 
         <motion.div variants={variants} className={mobileStyles.fullMenu}>
           <motion.div onClick={handleNav}>
-            <Link to="/" onClick={toTop}>
+            <Link to="landing" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
                 <HiHome className={mobileStyles.menuIcon} />
                 <p className="text-sm sm:text-md">Home</p>

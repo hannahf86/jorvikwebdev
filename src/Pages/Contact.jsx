@@ -39,7 +39,7 @@ const Contact = () => {
       "text-mono bg-button text-white text-base rounded-xl w-40 px-8 py-2 mx-2 mt-8 hover:bg-accent ",
     contactContainer: "hidden",
     formContainer: "flex flex-col justify-center items-center w-full mb-12",
-    input: "my-2 py-2 pl-2 rounded-md w-80",
+    input: "my-2 py-2 pl-2 rounded-md lg:w-2/6 w-4/6",
     phoneSVG: "text-accent absolute m-auto z-10",
     logo: "flex flex-col justify-center items-center pt-24",
   };

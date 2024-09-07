@@ -14,6 +14,7 @@ import About from "./Pages/About";
 import Faqs from "./Pages/Faqs";
 import Contact from "./Pages/Contact";
 import PrivacyPolicy from "./Legal/PrivacyPolicy";
+import Offer from "./Pages/Offer";
 
 // COMPONENTS
 import RootNav from "./Components/RootNav";
@@ -27,7 +28,8 @@ import Error from "./Helpers/Error";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootNav />}>
-      <Route index element={<Landing />} />
+      <Route index element={<Offer />} />
+      <Route path="landing" element={<Landing />} />
       <Route path="services" element={<Services />} />
       <Route path="about" element={<About />} />
       {/* <Route path="projects" element={<Projects />} /> */}

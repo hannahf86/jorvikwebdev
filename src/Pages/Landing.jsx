@@ -64,7 +64,7 @@ const Landing = () => {
     title:
       "text-white font-bold text-5xl pb-8 text-center lg:text-left lg:col-start-1 lg:col-span-3 lg:row-start-2",
     subtitle:
-      "text-lightGreen tracking-widest text-center font-bold text-sm pt-12 xl:pt-2 pb-4 lg:text-left lg:row-start-2",
+      "text-lightGreen tracking-widest text-center font-bold text-md pt-12 xl:pt-2 pb-4 lg:text-left lg:row-start-2",
     desc: "text-white text-base text-center pb-4 lg:text-left lg:row-start-3 lg:col-span-2",
     slidingText:
       "absolute -bottom-40 whitespace-nowrap z-10 text-9xl font-serif font-bold text-white/30",
