@@ -57,7 +57,7 @@ const Offer = () => {
     secondTitle:
       "text-accent text-4xl text-center flex content-center justify-center",
     subtitle:
-      "text-lightGreen tracking-widest text-center font-bold xl:text-3xl lg:text-2xl pt-8 pb-4 ",
+      "text-lightGreen text-lg tracking-widest text-center font-bold xl:text-3xl lg:text-2xl pt-8 pb-4 ",
     savings: "text-white tracking-widest text-center text-lg lg:text-md pb-4 ",
     desc: "text-white text-base text-center ",
     ctaTitle: "text-accent text-lg font-bold",
