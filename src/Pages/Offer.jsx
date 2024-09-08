@@ -46,7 +46,7 @@ const Offer = () => {
       "bg-button text-white text-sm rounded-md py-4 px-4 mt-12 hover:bg-accent ",
     logo: "flex flex-col justify-center items-center pt-32",
     gridContainer: "grid auto-cols-auto lg:grid-cols-3 mb-8",
-    cardContainer: "bg-white lg:mx-8 xl:mx-20 px-12 pt-8 mb-16 rounded-md",
+    cardContainer: "bg-white lg:mx-8 xl:mx-20 px-12 py-8 mb-16 rounded-md",
     cardImage: "w-32 py-2 m-auto",
     listItem: "list-none my-2 ml-4 text-black",
   };
