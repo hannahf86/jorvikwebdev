@@ -106,12 +106,12 @@ const Faqs = () => {
               </AccordionItemHeading>
               <AccordionItemPanel className={textStyles.questionText}>
                 For our starter <a href="#day">FastTrack Build</a> we aim to
-                deliver the website within 2 working days after we have received
+                deliver the website within 5 working days after we have received
                 all your information, i.e. images, text etc.
                 <br />
                 <br />
                 For our more advanced builds, depending on the size, we aim to
-                have this to you between 5 working days to a month, depening on
+                have this to you between 10 working days to a month, depening on
                 the size from initial consultation to launch.
               </AccordionItemPanel>
             </AccordionItem>
@@ -128,7 +128,7 @@ const Faqs = () => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={textStyles.questionText}>
-                Build packages start from £150. You can find out more on our{" "}
+                Build packages start from £180. You can find out more on our{" "}
                 <a href="/#services">Services</a> page . Alternatively, you can
                 contact us directly via our <a href="/#contact">Contact</a> page
                 for more personalised pricing.
@@ -171,8 +171,8 @@ const Faqs = () => {
                     20% reduction in fees for projects you buy in the future.
                   </strong>
                 </li>
-                Plus more! Find out how you can join the JWD Squad and save on
-                website updates and maintenance <a href="/#jwdSquad">here</a>
+                Plus more! Get in touch to find out how we will continue to
+                support your business even after the build
               </AccordionItemPanel>
             </AccordionItem>
           </Accordion>
@@ -188,10 +188,8 @@ const Faqs = () => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={textStyles.questionText}>
-                We offer basic SEO for your website in our StartUp and Business
-                Build packages. This will include a meta description, an
-                effective website title and the use of keywords and phrases for
-                on-page SEO.
+                Yes we do. We will use the most up to date techniques to improve
+                your Google ranking.
                 <br />
                 {/* For more information on SEO tips as a business owner, please see
                 our blog which can be found <a href="#">here</a> */}
