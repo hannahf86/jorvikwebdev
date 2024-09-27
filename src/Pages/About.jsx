@@ -134,7 +134,7 @@ const About = () => {
           Let&apos;s work together!
           <br />
           <br />
-          Hannah is ready for your requests!
+          We are ready for your requests!
           <br />
           <br /> Email {""}
           <strong className="text-button hover:text-accent cursor-pointer">
