@@ -83,12 +83,7 @@ const Footer = () => {
       </div>
 
       <div className={layoutStyles.contactContainer}>
-        <div className="flex mt-4">
-          <FaMobileScreen size={25} className={layoutStyles.contactIcons} />{" "}
-          <small className="text-white tracking-wider text-sm">
-            07548 957500
-          </small>
-        </div>
+        
 
         <div className="flex mt-4">
           <MdEmail size={25} className={layoutStyles.contactIcons} />{" "}

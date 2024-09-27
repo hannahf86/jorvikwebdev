@@ -45,8 +45,8 @@ const Offer = () => {
     button:
       "bg-button text-white text-sm rounded-md py-4 px-4 mt-12 hover:bg-accent ",
     logo: "flex flex-col justify-center items-center pt-32",
-    gridContainer: "grid auto-cols-auto lg:grid-cols-3 ",
-    cardContainer: "bg-white lg:mx-8 xl:mx-20 px-12 py-8 rounded-md",
+    gridContainer: "grid auto-cols-auto lg:grid-cols-3 mb-8",
+    cardContainer: "bg-white lg:mx-8 xl:mx-20 px-12 py-8 mb-16 rounded-md",
     cardImage: "w-32 py-2 m-auto",
     listItem: "list-none my-2 ml-4 text-black",
   };
@@ -57,7 +57,7 @@ const Offer = () => {
     secondTitle:
       "text-accent text-4xl text-center flex content-center justify-center",
     subtitle:
-      "text-lightGreen tracking-widest text-center font-bold xl:text-3xl lg:text-2xl pt-8 pb-4 ",
+      "text-lightGreen text-2xl tracking-widest text-center font-bold xl:text-3xl lg:text-2xl pt-8 pb-4 ",
     savings: "text-white tracking-widest text-center text-lg lg:text-md pb-4 ",
     desc: "text-white text-base text-center ",
     ctaTitle: "text-accent text-lg font-bold",
