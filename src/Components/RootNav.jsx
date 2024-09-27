@@ -84,7 +84,7 @@ const RootNav = () => {
 
         <motion.div variants={variants} className={mobileStyles.fullMenu}>
           <motion.div onClick={handleNav}>
-            <Link to="landing" onClick={toTop}>
+            <Link to="/" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
                 <HiHome className={mobileStyles.menuIcon} />
                 <p className="text-sm sm:text-md">Home</p>

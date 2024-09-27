@@ -102,7 +102,8 @@ const Landing = () => {
             We will design and build a <strong>high quality</strong>,{" "}
             <strong>responsive website</strong> with{" "}
             <strong>excellent user experience</strong> and{" "}
-            <strong>basic SEO</strong> for your business or personal use.
+            <strong>basic SEO</strong> for your business or personal use in{" "}
+            <strong>5</strong> working days.
             <br />
             <br />
             Friendly and professional, putting your goals first.
