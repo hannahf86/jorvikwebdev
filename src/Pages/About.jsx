@@ -134,13 +134,13 @@ const About = () => {
           Let&apos;s work together!
           <br />
           <br />
-          Jarl Hannah is ready for your requests!
+          Hannah is ready for your requests!
           <br />
           <br /> Email {""}
           <strong className="text-button hover:text-accent cursor-pointer">
             hello@jorvikweb.dev
           </strong>{" "}
-          with your project requests
+          with your project ideas.
         </h3>
       </div>
     </div>

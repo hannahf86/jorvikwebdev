@@ -6,8 +6,8 @@ import { useRef } from "react";
 // MOTION
 import { motion } from "framer-motion";
 
-// ICONS
-import { FaCheck } from "react-icons/fa";
+// // ICONS
+// import { FaCheck } from "react-icons/fa";
 
 const variants = {
   initial: {
@@ -39,16 +39,12 @@ const Services = () => {
 
     servicesContainer: "flex flex-wrap justify-center mb-10",
     serviceCard:
-      "bg-white mx-10 mt-10 p-8 rounded-lg border-2 border-white md:mx-6 max-w-100",
-    squadCard:
-      "bg-white mx-10 mt-10 p-8 rounded-lg border-4 border-accent md:mx-6 max-w-100",
-    cardLayout: "grid grid-cols-3 grid-rows-15",
-    cardImage: "w-32 col-start-1 row-span-2 pr-1",
-    cardTitle:
-      "text-left pl-2 font-bold text-xl text-black col-start-2 col-span-2 self-center",
-    price: "text-left pl-2 col-start-2 text-black",
-    cardDesc: "row-start-3 row-span-10 col-span-3 col-start-1 items-start mt-4",
-    listItem: "list-none my-2 ml-4 text-black",
+      "bg-white mx-10 mt-10 p-6 rounded-lg border-2 border-white md:mx-6 max-w-80",
+
+    cardLayout: "flex flex-col justify-center items-center",
+    cardImage: "w-40 col-start-1 col-span-3 row-span-2 justify-self-center",
+    cardTitle: "text-center font-bold text-lg text-black my-4",
+    cardDesc: " text-center",
 
     ctaContainer: "w-full bg-white py-8 px-10 text-center ",
   };
@@ -107,12 +103,83 @@ const Services = () => {
         </div>
       </motion.div>
 
-      {/* SERVICES CONTAINER */}
+      {/* SERVICES HIGHLIGHT CONTAINER */}
       <motion.div
         className={layoutStyles.servicesContainer}
         variants={variants}>
         {/* --------- ITEM 01 --------- */}
         <div className={layoutStyles.serviceCard}>
+          <div className={layoutStyles.cardLayout}>
+            <img
+              src="./FastTrack.webp"
+              alt="fast track build image"
+              className={layoutStyles.cardImage}
+            />
+            <h2 className={layoutStyles.cardTitle}>Web Design</h2>
+            <p className={layoutStyles.cardDesc}>
+              Make a statement and stand out with a modern and fully responsive
+              design from our expert UI designer
+            </p>
+          </div>
+        </div>
+
+        {/* --------- ITEM 02 --------- */}
+        <div className={layoutStyles.serviceCard}>
+          <div className={layoutStyles.cardLayout}>
+            <img
+              src="./StartUp.webp"
+              alt="fast track build image"
+              className={layoutStyles.cardImage}
+            />
+            <h2 className={layoutStyles.cardTitle}>Web Development</h2>
+            <p className={layoutStyles.cardDesc}>
+              Our experienced developers will make sure your website will be
+              fast and secure with
+            </p>
+          </div>
+        </div>
+
+        {/* --------- ITEM 03 --------- */}
+        <div className={layoutStyles.serviceCard}>
+          <div className={layoutStyles.cardLayout}>
+            <img
+              src="./Business.webp"
+              alt="fast track build image"
+              className={layoutStyles.cardImage}
+            />
+            <h2 className={layoutStyles.cardTitle}>e-Commerce</h2>
+
+            <p className={layoutStyles.cardDesc}>
+              Sell your products online and reach markets across the world using
+              your choice of Shopify or Stripe
+            </p>
+          </div>
+        </div>
+
+        {/* --------- ITEM 04 --------- */}
+        <div className={layoutStyles.serviceCard}>
+          <div className={layoutStyles.cardLayout}>
+            <img
+              src="./Tech.webp"
+              alt="fast track build image"
+              className={layoutStyles.cardImage}
+            />
+            <h2 className={layoutStyles.cardTitle}>SEO</h2>
+
+            <p className={layoutStyles.cardDesc}>
+              Stay ahead of your competitors and rank higher with the latest SEO
+              techniques
+            </p>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* SERVICES CONTAINER - ORIGINAL */}
+      <motion.div
+        className={layoutStyles.servicesContainer}
+        variants={variants}>
+        {/* --------- ITEM 01 --------- */}
+        {/* <div className={layoutStyles.serviceCard}>
           <div className={layoutStyles.cardLayout}>
             <img
               src="./FastTrack.webp"
@@ -125,9 +192,9 @@ const Services = () => {
             <h3 className={layoutStyles.cardDesc}>
               <p className="mb-2 font-bold text-black self-start">
                 Included in this package...
-              </p>
-              {/* DETAILS */}
-              <div className="flex items-center">
+              </p> */}
+        {/* DETAILS */}
+        {/* <div className="flex items-center">
                 <FaCheck className="text-lightGreen" />
                 <li className={layoutStyles.listItem}>
                   Up to <strong>4</strong> pages
@@ -181,11 +248,11 @@ const Services = () => {
               </div>
             </h3>
           </div>
-        </div>
+        </div> */}
 
         {/* --------- ITEM 02 --------- */}
 
-        <div className={layoutStyles.serviceCard}>
+        {/* <div className={layoutStyles.serviceCard}>
           <div className={layoutStyles.cardLayout}>
             <img
               src="./StartUp.webp"
@@ -198,7 +265,7 @@ const Services = () => {
                 Included in this package...
               </p>
               {/* DETAILS */}
-              <div className="flex items-center">
+        {/* <div className="flex items-center">
                 <FaCheck className="text-lightGreen" />
                 <li className={layoutStyles.listItem}>
                   Up to <strong>6</strong> pages
@@ -270,12 +337,12 @@ const Services = () => {
               </div>
             </h3>
             <h4 className={layoutStyles.price}>from £295</h4>
-          </div>
-        </div>
+          </div> 
+        </div> */}
 
         {/* --------- ITEM 03 --------- */}
 
-        <div className={layoutStyles.serviceCard}>
+        {/* <div className={layoutStyles.serviceCard}>
           <div className={layoutStyles.cardLayout}>
             <img
               src="./Business.webp"
@@ -286,9 +353,9 @@ const Services = () => {
             <h3 className={layoutStyles.cardDesc}>
               <p className="mb-2 font-bold text-black">
                 Included in this package...
-              </p>
-              {/* DETAILS */}
-              <div className="flex items-center">
+              </p> */}
+        {/* DETAILS */}
+        {/* <div className="flex items-center">
                 <FaCheck className="text-lightGreen" />
                 <li className={layoutStyles.listItem}>
                   Up to <strong>10</strong> pages
@@ -386,69 +453,10 @@ const Services = () => {
                   Receive all files upon completion
                 </li>
               </div>
-            </h3>
-            <h4 className={layoutStyles.price}>from £550</h4>
-          </div>
-        </div>
-
-        {/* --------- ITEM 04 --------- */}
-
-        <div className={layoutStyles.squadCard}>
-          <div className={layoutStyles.cardLayout}>
-            <img
-              src="./Business.webp"
-              alt="business build image"
-              className={layoutStyles.cardImage}
-            />
-            <h2 className={layoutStyles.cardTitle}>JWD Squad</h2>
-            <h3 className={layoutStyles.cardDesc}>
-              <p className="mb-2 font-bold text-black">
-                Just because your website is complete does not mean the help
-                stops there!
-                <br />
-                <br />
-                Join our sqaud with a monthly subscription and receive the
-                benefits of...
-              </p>
-              {/* DETAILS */}
-              <div className="flex items-center">
-                <FaCheck className="text-lightGreen" />
-                <li className={layoutStyles.listItem}>
-                  Security and accessibility updates
-                </li>
-              </div>
-              <div className="flex items-center">
-                <FaCheck className="text-lightGreen" />
-                <li className={layoutStyles.listItem}>
-                  Domain stability checks
-                </li>
-              </div>
-              <div className="flex items-center">
-                <FaCheck className="text-lightGreen" />
-                <li className={layoutStyles.listItem}>
-                  Two SEO updates over 12 months
-                </li>
-              </div>
-              <div className="flex items-center">
-                <FaCheck className="text-lightGreen" />
-                <li className={layoutStyles.listItem}>
-                  25% discount on future products and services
-                </li>
-              </div>
-              <div className="flex items-center">
-                <FaCheck className="text-lightGreen" />
-                <li className={layoutStyles.listItem}>
-                  Four hours worth of content updates over 12 months
-                </li>
-              </div>
-              <div className="flex items-center">
-                <FaCheck className="text-lightGreen" />
-                <li className={layoutStyles.listItem}>Website maintenance</li>
-              </div>
-            </h3>
-            <h4 className={layoutStyles.price}>£15 a month</h4>
-          </div>
-        </div>
+            </h3> */}
+        {/* <h4 className={layoutStyles.price}>from £550</h4> */}
+        {/* </div>
+        </div> */}
       </motion.div>
 
       {/* --------- CALL TO ACTION --------- */}
@@ -464,15 +472,11 @@ const Services = () => {
         <h3 className={textStyles.ctaTitle}>
           Can&apos;t find exactly what you&apos;re looking for?
         </h3>
-        <p className="pt-2 pb-4">
+        <p className="pt-2 pb-4 text-md">
           We&apos;re here to help you achieve your goal, whether its personal or
           business.
-          <br />
-          <br />
-          Addons such as videos, blogs, image galleries, booking systems are
-          available.
         </p>
-        <p>
+        <p className="text-md">
           Email{" "}
           <strong className="text-button hover:text-accent cursor-pointer">
             hello@jorvikweb.dev
